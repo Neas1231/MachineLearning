@@ -9,3 +9,6 @@ https://translated.turbopages.org/proxy_u/en-ru.ru.904988c9-646b6a5e-51fea8eb-74
 
 Работа с очисткой данных с визуализацией
 https://proglib.io/p/moem-dataset-rukovodstvo-po-ochistke-dannyh-v-python-2020-03-27?ysclid=li01z3qz1r525794745
+
+Оформление Markdown
+https://gist.github.com/Jekins/2bf2d0638163f1294637#Parag
