@@ -1,6 +1,9 @@
 Порядок очистки и предобработки данных(может помочь с документацией)
 https://4brain.ru/aibasics/data.php
 
+Сама очистка датасета 
+https://proglib.io/p/moem-dataset-rukovodstvo-po-ochistke-dannyh-v-python-2020-03-27
+
 Лучшая EDA с Pandas-профилированием(расширенная библиотека для анализа данных визуализация)
 https://machinelearningmastery.ru/a-better-eda-with-pandas-profiling-e842a00e1136/
 
