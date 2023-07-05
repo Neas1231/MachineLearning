@@ -18,3 +18,6 @@ https://gist.github.com/Jekins/2bf2d0638163f1294637#Parag
 
 Регрессии
 https://nagornyy.me/it/regressionnye-modeli-v-python/?ysclid=li32g5z88z206543063
+
+Ошибки в строковых данных word2vec
+https://habr.com/ru/companies/singularis/articles/358664/
