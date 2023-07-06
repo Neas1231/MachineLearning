@@ -1,6 +1,9 @@
 Порядок очистки и предобработки данных(может помочь с документацией)
 https://4brain.ru/aibasics/data.php
 
+7 этапов анализа данных (может помочь с комментариями и пониманием последовательностей)
+https://pythonru.com/baza-znanij/process-analiza-dannyh
+
 Сама очистка датасета 
 https://proglib.io/p/moem-dataset-rukovodstvo-po-ochistke-dannyh-v-python-2020-03-27
 
