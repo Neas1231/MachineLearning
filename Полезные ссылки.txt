@@ -10,9 +10,6 @@ https://www.kaggle.com/code/emstrakhov/lecture-1-exploratory-data-analysis
 Сама очистка датасета 
 https://proglib.io/p/moem-dataset-rukovodstvo-po-ochistke-dannyh-v-python-2020-03-27
 
-Лучшая EDA с Pandas-профилированием(расширенная библиотека для анализа данных визуализация)
-https://machinelearningmastery.ru/a-better-eda-with-pandas-profiling-e842a00e1136/
-
 Что такое визуализация данных в машинном обучении и как это работает(Много хороших графиков и визуализации данных для EDA)
 https://www.c-sharpcorner.com/article/what-is-data-visualization-in-machine-learning-and-how-does-it-work/
 
