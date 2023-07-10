@@ -13,6 +13,9 @@ https://proglib.io/p/moem-dataset-rukovodstvo-po-ochistke-dannyh-v-python-2020-0
 Что такое визуализация данных в машинном обучении и как это работает(Много хороших графиков и визуализации данных для EDA)
 https://www.c-sharpcorner.com/article/what-is-data-visualization-in-machine-learning-and-how-does-it-work/
 
+Roc-auc Объяснение и как построить на бинарной классификации
+https://pythonru.com/baza-znanij/sklearn-roc-auc
+
 Работа с очисткой данных с визуализацией
 https://proglib.io/p/moem-dataset-rukovodstvo-po-ochistke-dannyh-v-python-2020-03-27?ysclid=li01z3qz1r525794745
 
