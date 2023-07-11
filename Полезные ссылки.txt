@@ -1,14 +1,20 @@
 Порядок очистки и предобработки данных(может помочь с документацией)
 https://4brain.ru/aibasics/data.php
 
+7 этапов анализа данных (может помочь с комментариями и пониманием последовательностей)
+https://pythonru.com/baza-znanij/process-analiza-dannyh
+
+Код kaggle с группировками(crosstable,pivottable,countplot)
+https://www.kaggle.com/code/emstrakhov/lecture-1-exploratory-data-analysis
+
 Сама очистка датасета 
 https://proglib.io/p/moem-dataset-rukovodstvo-po-ochistke-dannyh-v-python-2020-03-27
 
-Лучшая EDA с Pandas-профилированием(расширенная библиотека для анализа данных визуализация)
-https://machinelearningmastery.ru/a-better-eda-with-pandas-profiling-e842a00e1136/
-
 Что такое визуализация данных в машинном обучении и как это работает(Много хороших графиков и визуализации данных для EDA)
 https://www.c-sharpcorner.com/article/what-is-data-visualization-in-machine-learning-and-how-does-it-work/
+
+Roc-auc Объяснение и как построить на бинарной классификации
+https://pythonru.com/baza-znanij/sklearn-roc-auc
 
 Работа с очисткой данных с визуализацией
 https://proglib.io/p/moem-dataset-rukovodstvo-po-ochistke-dannyh-v-python-2020-03-27?ysclid=li01z3qz1r525794745
@@ -18,3 +24,6 @@ https://gist.github.com/Jekins/2bf2d0638163f1294637#Parag
 
 Регрессии
 https://nagornyy.me/it/regressionnye-modeli-v-python/?ysclid=li32g5z88z206543063
+
+Ошибки в строковых данных word2vec
+https://habr.com/ru/companies/singularis/articles/358664/
