@@ -27,3 +27,6 @@ https://nagornyy.me/it/regressionnye-modeli-v-python/?ysclid=li32g5z88z206543063
 
 Ошибки в строковых данных word2vec
 https://habr.com/ru/companies/singularis/articles/358664/
+
+Выбор модели машинного обучения
+https://habr.com/ru/companies/ruvds/articles/517830/
