@@ -36,3 +36,6 @@ https://habr.com/ru/companies/ruvds/articles/517830/
 
 Оценка кластеризации
 https://www.geeksforgeeks.org/clustering-performance-evaluation-in-scikit-learn/
+
+Классификация текста (SVM)
+https://habr.com/ru/articles/266025/
