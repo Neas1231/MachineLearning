@@ -39,3 +39,13 @@ https://www.geeksforgeeks.org/clustering-performance-evaluation-in-scikit-learn/
 
 Классификация текста (SVM)
 https://habr.com/ru/articles/266025/
+
+Пример использования Docker с Django и SQLite
+https://github.com/ostechhelp/django_sqlite3_on_docker_compose/tree/main
+https://www.youtube.com/watch?v=UGnNGvEXlFY
+
+Postgress to sqlite3
+https://dev.to/radinreth/update-postgres-to-sqlite3-for-rails-6-using-docker-compose-2d7
+
+Основы Docker
+https://www.youtube.com/playlist?list=PL0lO_mIqDDFX1c0JHogP5YuZdOVawoepS
