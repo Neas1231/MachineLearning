@@ -43,3 +43,6 @@ https://habr.com/ru/articles/266025/
 Пример использования Docker с Django и SQLite
 https://github.com/ostechhelp/django_sqlite3_on_docker_compose/tree/main
 https://www.youtube.com/watch?v=UGnNGvEXlFY
+
+Postgress to sqlite3
+https://dev.to/radinreth/update-postgres-to-sqlite3-for-rails-6-using-docker-compose-2d7
