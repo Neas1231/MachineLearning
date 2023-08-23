@@ -28,6 +28,9 @@ https://nagornyy.me/it/regressionnye-modeli-v-python/?ysclid=li32g5z88z206543063
 Ошибки в строковых данных word2vec
 https://habr.com/ru/companies/singularis/articles/358664/
 
+Дрейф данных и концепций
+https://habr.com/ru/companies/vk/articles/671896/
+
 Pca t-SNE и кластеризация
 https://habr.com/ru/companies/ods/articles/325654/
 
