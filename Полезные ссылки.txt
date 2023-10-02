@@ -52,3 +52,6 @@ https://dev.to/radinreth/update-postgres-to-sqlite3-for-rails-6-using-docker-com
 
 Основы Docker
 https://www.youtube.com/playlist?list=PL0lO_mIqDDFX1c0JHogP5YuZdOVawoepS
+
+Настройка hadoop на windows
+https://kontext.tech/article/377/latest-hadoop-321-installation-on-windows-10-step-by-step-guide
