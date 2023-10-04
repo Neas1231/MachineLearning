@@ -56,3 +56,6 @@ https://www.youtube.com/playlist?list=PL0lO_mIqDDFX1c0JHogP5YuZdOVawoepS
 Настройка hadoop на windows
 https://kontext.tech/article/378/compile-and-build-hadoop-321-on-windows-10-guide
 https://kontext.tech/article/377/latest-hadoop-321-installation-on-windows-10-step-by-step-guide
+
+Временные ряды, увеличение параметров, Tsfresh
+https://otus.ru/nest/post/1024/
