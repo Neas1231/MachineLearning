@@ -66,3 +66,6 @@ https://github.com/tinkoff-ai/etna/tree/master/examples
 Временные ряды, предсказание, модели Darts
 https://unit8co.github.io/darts/
 
+Попытка Reinforcement Learning в классификацию
+https://www.brthor.com/blog/ai/reinforcement-learning/can-reinforcement-learning-be-used-for-classification/
+
