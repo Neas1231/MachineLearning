@@ -59,3 +59,10 @@ https://kontext.tech/article/377/latest-hadoop-321-installation-on-windows-10-st
 
 Временные ряды, увеличение параметров, Tsfresh
 https://otus.ru/nest/post/1024/
+
+Временные ряды, предсказание, модели ETNA
+https://github.com/tinkoff-ai/etna/tree/master/examples
+
+Временные ряды, предсказание, модели Darts
+https://unit8co.github.io/darts/
+
