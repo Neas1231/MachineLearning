@@ -52,3 +52,20 @@ https://dev.to/radinreth/update-postgres-to-sqlite3-for-rails-6-using-docker-com
 
 Основы Docker
 https://www.youtube.com/playlist?list=PL0lO_mIqDDFX1c0JHogP5YuZdOVawoepS
+
+Настройка hadoop на windows
+https://kontext.tech/article/378/compile-and-build-hadoop-321-on-windows-10-guide
+https://kontext.tech/article/377/latest-hadoop-321-installation-on-windows-10-step-by-step-guide
+
+Временные ряды, увеличение параметров, Tsfresh
+https://otus.ru/nest/post/1024/
+
+Временные ряды, предсказание, модели ETNA
+https://github.com/tinkoff-ai/etna/tree/master/examples
+
+Временные ряды, предсказание, модели Darts
+https://unit8co.github.io/darts/
+
+Попытка Reinforcement Learning в классификацию
+https://www.brthor.com/blog/ai/reinforcement-learning/can-reinforcement-learning-be-used-for-classification/
+
