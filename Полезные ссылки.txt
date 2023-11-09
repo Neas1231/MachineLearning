@@ -70,3 +70,13 @@ https://unit8co.github.io/darts/
 Попытка Reinforcement Learning в классификацию
 https://www.brthor.com/blog/ai/reinforcement-learning/can-reinforcement-learning-be-used-for-classification/
 
+
+
+
+floyds tortoise and hare - поиск циклов можно интерпретировать как поиск дубликатов
+
+есть разные методы корреляции
+
+Генеративно-состязательные сети GAN
+
+Визуально-информационные трансформеры (VIT)
