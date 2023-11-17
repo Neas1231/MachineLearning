@@ -20,6 +20,10 @@ https://pythonru.com/baza-znanij/sklearn-roc-auc
 Работа с очисткой данных с визуализацией
 https://proglib.io/p/moem-dataset-rukovodstvo-po-ochistke-dannyh-v-python-2020-03-27?ysclid=li01z3qz1r525794745
 
+Предобработка текста
+https://qaa-engineer.ru/obrabotka-russkogo-teksta/
+https://habr.com/ru/articles/670566/
+
 Оформление Markdown
 https://gist.github.com/Jekins/2bf2d0638163f1294637#Parag
 
