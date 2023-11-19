@@ -25,6 +25,10 @@ https://qaa-engineer.ru/obrabotka-russkogo-teksta/
 https://habr.com/ru/articles/670566/
 https://aiogram.ru/?p=965
 
+Sklearn text preprocess and classification
+https://habr.com/ru/articles/264339/
+https://habr.com/ru/articles/266025/
+
 Алгоритмы классификации текста
 https://skine.ru/articles/348415/
 
