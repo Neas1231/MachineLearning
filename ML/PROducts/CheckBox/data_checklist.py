@@ -10,7 +10,6 @@ from PyQt6.QtWidgets import (
     QLabel,
     QCheckBox,
     QMessageBox,
-    QVBoxLayout
 )
 from pathlib import Path
 import pickle
@@ -46,14 +45,13 @@ class MainWindow(QWidget):
         check_boxes_save.clicked.connect(self.save_result)
 
         # widget setup
-        dir_layout = QGridLayout()
-        dir_layout.addWidget(QLabel('File:'), 1, 0)
-        dir_layout.addWidget(self.filename_edit, 1, 1)
-        dir_layout.addWidget(direct_browse, 1, 2)
-        dir_layout.addWidget(check_boxes_construct, 2, 2)
-        dir_layout.addWidget(check_boxes_save, 2, 0)
+        self.layout.addWidget(QLabel('File:'), 1, 0)
+        self.layout.addWidget(self.filename_edit, 1, 1, 1, 2)
+        self.layout.addWidget(direct_browse, 1, 3, 1, 5)
+        self.layout.addWidget(check_boxes_construct, 2, 3, 1, 5)
+        self.layout.addWidget(check_boxes_save, 2, 0)
 
-        self.layout.addLayout(dir_layout, 0, 0)
+        self.layout.alignment()
 
         self.show()
 
@@ -67,14 +65,7 @@ class MainWindow(QWidget):
             from math import ceil
             self.catalogue = self.filename_edit.text()[self.filename_edit.text().rfind('\\') + 1:]
             self.content = {f for f in listdir(self.filename_edit.text())}
-            print('da')
-            self.added_first = QVBoxLayout()
-            self.added_second = QVBoxLayout()
-            self.added_third = QVBoxLayout()
-            print('net')
-            n = 0
-            start_border = ceil(len(self.content) / 3)
-            end_border = start_border * 2
+
             if exists(f'{self.catalogue}.pickle'):
                 with open(f'{self.catalogue}.pickle', 'rb') as file:
                     saved_conf = pickle.load(file)
@@ -84,41 +75,35 @@ class MainWindow(QWidget):
                         self.filenames_buttons_dict[file] = cbutton
                         if file in saved_conf:
                             self.filenames_buttons_dict[file].setCheckState(saved_conf[file])
-                        if n < start_border:
-                            self.added_first.addWidget(self.filenames_buttons_dict[file])
-                        elif start_border < n < end_border:
-                            self.added_second.addWidget(self.filenames_buttons_dict[file])
-                        elif end_border < n:
-                            self.added_third.addWidget(self.filenames_buttons_dict[file])
-
+                        self.layout.addWidget(self.filenames_buttons_dict[file])
                     else:
                         pass
-                    n += 1
-                self.layout.addLayout(self.added_first, 1, 0)
-                self.layout.addLayout(self.added_second, 1, 1)
-                self.layout.addLayout(self.added_third, 1, 2)
+
             else:
                 for file in self.content:
                     if file not in self.filenames_buttons_dict:
                         cbutton = QCheckBox(f"{file}")
                         self.filenames_buttons_dict[file] = cbutton
-                        print("Норм")
-                        if n < start_border:
-                            self.added_first.addWidget(self.filenames_buttons_dict[file])
-                        elif start_border < n < end_border:
-                            self.added_second.addWidget(self.filenames_buttons_dict[file])
-                        elif end_border < n:
-                            self.added_third.addWidget(self.filenames_buttons_dict[file])
+                        self.layout.addWidget(self.filenames_buttons_dict[file])
                     else:
                         pass
-                n += 1
-                print('kek')
-                self.layout.addLayout(self.added_first, 1, 4)
-                self.layout.addLayout(self.added_second, 1, 1)
-                self.layout.addLayout(self.added_third, 1, 2)
-                print('xuk')
+            remove_btn = QPushButton('Remove')
+            remove_btn.clicked.connect(self.delete_checkboxes)
+            self.layout.addWidget(remove_btn, 1, 8)
         except:
-            ...
+            pass
+
+    def delete_checkboxes(self):
+        print('tut')
+        widgets_count = self.layout.count() - 1
+        print('zdes')
+        # while widgets_count > 4:
+        #     print('tuta')
+        #     self.layout.takeAt(widgets_count).widget().deleteLater()
+        #     print('est')
+        #     widgets_count -= 1
+        # self.filenames_buttons_dict = {}
+        self.__init__()
 
     def open_dir_dialog(self):
         direct = str(QFileDialog.getExistingDirectory(self, "Select Directory", "Select directory"))
