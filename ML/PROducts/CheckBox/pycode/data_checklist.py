@@ -22,7 +22,8 @@ class MainWindow(QWidget):
         # window settings
         self.setWindowTitle("Check_box")
         self.setWindowIcon(QtGui.QIcon(r'overall_decision_icon_149904.png'))
-        self.setGeometry(100, 100, 400, 100)
+        # self.setGeometry(100, 100, 400, 100)
+        self.setMaximumSize(400, 0)
 
         # layout setting
         self.layout = QGridLayout()
@@ -50,8 +51,6 @@ class MainWindow(QWidget):
         self.layout.addWidget(direct_browse, 1, 3, 1, 5)
         self.layout.addWidget(check_boxes_construct, 2, 3, 1, 5)
         self.layout.addWidget(check_boxes_save, 2, 0)
-
-        self.layout.alignment()
 
         self.show()
 
@@ -89,7 +88,8 @@ class MainWindow(QWidget):
                         pass
             remove_btn = QPushButton('Remove')
             remove_btn.clicked.connect(self.delete_checkboxes)
-            self.layout.addWidget(remove_btn, 1, 8)
+            self.layout.addWidget(remove_btn, 2, 3, 1, 5)
+            self.setLayout(self.layout)
         except:
             pass
 
@@ -124,3 +124,5 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = MainWindow()
     sys.exit(app.exec())
+
+# %%
