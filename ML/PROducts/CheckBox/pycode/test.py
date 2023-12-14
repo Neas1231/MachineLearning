@@ -1,8 +1,9 @@
 import sys
 from PyQt6 import QtWidgets
 from PyQt6 import QtGui
+from PyQt6 import sip
+from PyQt6.QtCore import Qt
 from PyQt6.QtWidgets import (
-    QFormLayout,
     QApplication,
     QFileDialog,
     QWidget,
@@ -12,8 +13,10 @@ from PyQt6.QtWidgets import (
     QLabel,
     QCheckBox,
     QMessageBox,
-    QVBoxLayout
+    QVBoxLayout,
+    QScrollArea
 )
+
 from pathlib import Path
 import pickle
 
@@ -25,15 +28,12 @@ class MainWindow(QWidget):
         # window settings
         self.setWindowTitle("Check_box")
         self.setWindowIcon(QtGui.QIcon(r'overall_decision_icon_149904.png'))
-        # self.setGeometry(100, 100, 400, 100)
-        #self.setMaximumSize(400, 0)
 
-        self.mainLayout = QtWidgets.QVBoxLayout()
+        self.mainLayout = QVBoxLayout()
         self.setLayout(self.mainLayout)
 
         # layout setting
         self.layout = QGridLayout()
-
 
         # dir text
         self.filename_edit = QLineEdit()
@@ -58,6 +58,8 @@ class MainWindow(QWidget):
         self.layout.addWidget(check_boxes_construct, 2, 3, 1, 5)
         self.layout.addWidget(check_boxes_save, 2, 0)
 
+        self.layout.setAlignment(Qt.AlignmentFlag.AlignTop)
+
         self.mainLayout.addLayout(self.layout)
 
         self.show()
@@ -70,8 +72,12 @@ class MainWindow(QWidget):
             from os import listdir
             from os.path import exists
             from math import ceil
-            scroll = QtWidgets.QScrollArea()
-            layout = QtWidgets.QVBoxLayout()
+            scroll = QScrollArea()
+            scroll.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOn)
+            scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
+            scroll.setWidgetResizable(True)
+            widget = QWidget()
+            self.checkbox_layout = QVBoxLayout()
             self.catalogue = self.filename_edit.text()[self.filename_edit.text().rfind('\\') + 1:]
             self.content = {f for f in listdir(self.filename_edit.text())}
 
@@ -84,7 +90,7 @@ class MainWindow(QWidget):
                         self.filenames_buttons_dict[file] = cbutton
                         if file in saved_conf:
                             self.filenames_buttons_dict[file].setCheckState(saved_conf[file])
-                        layout.addWidget(self.filenames_buttons_dict[file])
+                        self.checkbox_layout.addWidget(self.filenames_buttons_dict[file])
                     else:
                         pass
 
@@ -93,23 +99,32 @@ class MainWindow(QWidget):
                     if file not in self.filenames_buttons_dict:
                         cbutton = QCheckBox(f"{file}")
                         self.filenames_buttons_dict[file] = cbutton
-                        layout.addWidget(self.filenames_buttons_dict[file])
+                        self.checkbox_layout.addWidget(self.filenames_buttons_dict[file])
                     else:
                         pass
             remove_btn = QPushButton('Remove')
             remove_btn.clicked.connect(self.delete_checkboxes)
             self.layout.addWidget(remove_btn, 2, 3, 1, 5)
-            scroll.setLayout(layout)
+            widget.setLayout(self.checkbox_layout)
+            scroll.setWidget(widget)
             self.mainLayout.addWidget(scroll)
         except:
             pass
 
     def delete_checkboxes(self):
-        widgets_count = self.layout.count() - 1
-        while widgets_count > 4:
-            self.layout.takeAt(widgets_count).widget().deleteLater()
-            widgets_count -= 1
+        if self.checkbox_layout is not None:
+            while self.checkbox_layout.count():
+                item = self.checkbox_layout.takeAt(0)
+                widget = item.widget()
+                if widget is not None:
+                    widget.deleteLater()
+                else:
+                    self.deleteLayout(item.layout())
+            sip.delete(self.checkbox_layout)
+        self.mainLayout.itemAt(1).widget().deleteLater()
+        self.layout.itemAt(5).widget().deleteLater()
         self.filenames_buttons_dict = {}
+        
 
     def open_dir_dialog(self):
         direct = str(QFileDialog.getExistingDirectory(self, "Select Directory", "Select directory"))
