@@ -17,6 +17,9 @@ https://www.c-sharpcorner.com/article/what-is-data-visualization-in-machine-lear
 Roc-auc Объяснение и как построить на бинарной классификации
 https://pythonru.com/baza-znanij/sklearn-roc-auc
 
+Обьяснение одного из методов подбора параметров моделей
+https://towardsdatascience.com/probability-concepts-explained-maximum-likelihood-estimation-c7b4342fdbb1
+
 Работа с очисткой данных с визуализацией
 https://proglib.io/p/moem-dataset-rukovodstvo-po-ochistke-dannyh-v-python-2020-03-27?ysclid=li01z3qz1r525794745
 

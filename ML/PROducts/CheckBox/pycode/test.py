@@ -1,4 +1,3 @@
-import sys
 from PyQt6 import QtWidgets
 from PyQt6 import QtGui
 from PyQt6 import sip
@@ -17,6 +16,7 @@ from PyQt6.QtWidgets import (
     QScrollArea
 )
 
+import sys
 from pathlib import Path
 import pickle
 
@@ -124,7 +124,7 @@ class MainWindow(QWidget):
         self.mainLayout.itemAt(1).widget().deleteLater()
         self.layout.itemAt(5).widget().deleteLater()
         self.filenames_buttons_dict = {}
-        
+
 
     def open_dir_dialog(self):
         direct = str(QFileDialog.getExistingDirectory(self, "Select Directory", "Select directory"))
@@ -150,43 +150,3 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = MainWindow()
     sys.exit(app.exec())
-
-# %%
-from PyQt6 import QtGui, QtCore, QtWidgets
-import sys
-
-
-class Main(QtWidgets.QMainWindow):
-    def __init__(self, parent=None):
-        super(Main, self).__init__(parent)
-        # main button
-        # scroll area widget contents - layout
-        self.layout = QtWidgets.QGridLayout()
-        # main layout
-        self.mainLayout = QtWidgets.
-        # add all main to the main vLayout
-        self.mainLayout.addWidget(self.layout)
-        # central widget
-        self.centralWidget = QtWidgets.QWidget()
-        self.centralWidget.setLayout(self.mainLayout)
-        # set central widget
-        self.setCentralWidget(self.centralWidget)
-
-    def addWidget(self):
-        self.scrollLayout.addRow(Test())
-
-
-class Test(QtWidgets.QWidget):
-    def __init__(self, parent=None):
-        super(Test, self).__init__(parent)
-        self.pushButton = QtWidgets.QPushButton('I am in Test widget')
-        layout = QtWidgets.QHBoxLayout()
-        layout.addWidget(self.pushButton)
-        self.setLayout(layout)
-
-
-app = QtWidgets.QApplication(sys.argv)
-myWidget = Main()
-myWidget.show()
-app.exec()
-# %%
