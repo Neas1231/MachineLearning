@@ -1,0 +1,8 @@
+train: /content/drive/MyDrive/yolo_training/dataset/train/images
+
+val: /content/drive/MyDrive/yolo_training/dataset/val/images
+
+
+nc: 5
+
+names: [ 'D00','D10','D20','D40','Repair' ]
