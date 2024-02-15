@@ -3,3 +3,8 @@
 *.png
 ML/Neuro-webs_competition/road_holes/proj/YOLO-Annotation-Tool/
 ML/Neuro-webs_competition/road_holes/proj/yolov5/
+ML/Neuro-webs_competition/road_holes/proj/B/yolov5/
+ML/Neuro-webs_competition/road_holes/proj/B/COCO_YOLO_dataset_generator/
+ML/Neuro-webs_competition/road_holes/proj/A/yolov5/
+ML/Neuro-webs_competition/road_holes/proj/A/Yolo-to-COCO-format-converter/
+ML/Neuro-webs_competition/road_holes/proj/A/YOLO-Annotation-Tool/
