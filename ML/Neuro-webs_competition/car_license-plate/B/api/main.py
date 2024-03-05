@@ -26,8 +26,11 @@ if img_file_buffer is not None:
     pred = predictions(img)
     st.write('Результат:')
     st.write(pred)
-if uploaded_file is not None:
-    img = np.array(Image.open(uploaded_file))
-    pred = predictions(img)
-    st.write('Результат:')
-    st.write(pred)
+try:
+    if uploaded_file is not None:
+        img = np.array(Image.open(uploaded_file))
+        pred = predictions(img)
+        st.write('Результат:')
+        st.write(pred)
+except:
+    st.write('Что-то пошло не так :(')
