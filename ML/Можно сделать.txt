@@ -10,6 +10,8 @@ https://habr.com/ru/articles/655517/
 
 Gan на основе рисовалки(как nvidia)
 
+OCR модели
+
 
 
 
