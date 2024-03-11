@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ML/Neuro-webs_competition/car_license-plate/A/Yolo-to-COCO-format-converter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ML/Neuro-webs_competition/car_license-plate/B/yolov5" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ML/Neuro-webs_competition/road_holes/proj/A/YOLO-Annotation-Tool" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ML/Neuro-webs_competition/road_holes/proj/A/Yolo-to-COCO-format-converter" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ML/Neuro-webs_competition/road_holes/proj/A/yolov5" vcs="Git" />
